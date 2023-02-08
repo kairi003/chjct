@@ -20,7 +20,7 @@ int wmain(int argc, wchar_t* argv[])
     }
     DWORD errorLevel = WFJunction((LPCWSTR)argv[1], (LPCWSTR)argv[2]);
     if (errorLevel) {
-        fwprintf(stderr, L"Error: %ul\n", errorLevel);
+        fwprintf(stderr, L"Error: %lu\n", errorLevel);
     }
     return errorLevel;
 }
